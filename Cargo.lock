@@ -313,6 +313,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "pi"
+version = "0.1.0"
+dependencies = [
+ "config",
+ "dialoguer",
+ "exitfailure",
+ "serde 1.0.130",
+ "serde_json",
+ "structopt",
+]
+
+[[package]]
 name = "ppv-lite86"
 version = "0.2.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -349,18 +361,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b9f5105d4fdaab20335ca9565e106a5d9b82b6219b5ba735731124ac6711d23d"
 dependencies = [
  "unicode-xid",
-]
-
-[[package]]
-name = "project-init"
-version = "0.1.0"
-dependencies = [
- "config",
- "dialoguer",
- "exitfailure",
- "serde 1.0.130",
- "serde_json",
- "structopt",
 ]
 
 [[package]]

@@ -39,6 +39,8 @@ pub fn rust(path: &PathBuf) {
     let mut create_rust_app = Command::new("cargo");
     create_rust_app
         .arg("init")
+        .arg("--vcs")
+        .arg("none")
         .current_dir(path)
         .status()
         .expect("Process failed to execute");
