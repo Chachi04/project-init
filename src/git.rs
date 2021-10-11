@@ -17,6 +17,8 @@ pub fn git_init(path: &PathBuf) -> Result<(), ExitFailure> {
 
 pub fn git_remote(path: &PathBuf) -> Result<(), ExitFailure> {
     let mut create_remote = Command::new("gh");
+    // TODO get Project Name
+    // let project_name = path.file_stem();
     let project_name = "Test_Project";
     create_remote
         .current_dir(path)
